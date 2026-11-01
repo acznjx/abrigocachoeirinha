@@ -1,0 +1,11 @@
+# Mantém as dependências atualizadas com correções de segurança (abre PRs automáticos no GitHub)
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      dependencias:
+        patterns: ["*"]
