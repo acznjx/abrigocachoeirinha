@@ -7,6 +7,7 @@ import { Patinha } from "@/components/Patinha";
 import { HeroVideo } from "@/components/HeroVideo";
 import { Revelar } from "@/components/Revelar";
 import { Contador } from "@/components/Contador";
+import { CopiarPix } from "@/components/CopiarPix";
 import { TituloSecao } from "@/components/Secao";
 import { SITE } from "@/lib/site";
 import { botao, rotulo } from "@/lib/ui";
@@ -94,7 +95,7 @@ export default function Home() {
       {/* Formas de ajudar */}
       <section className="mx-auto w-full max-w-6xl px-5 py-14 md:py-20">
         <Revelar>
-          <TituloSecao rotulo="Faça parte" titulo="Três jeitos de mudar uma história" />
+          <TituloSecao rotulo="Faça parte" titulo="Quatro jeitos de mudar uma história" />
         </Revelar>
         <div className="mt-6 grid gap-3 md:mt-10 md:grid-cols-3 md:gap-5">
           {formasDeAjudar.map((f, i) => (
@@ -112,6 +113,16 @@ export default function Home() {
             </Revelar>
           ))}
         </div>
+        <Revelar atraso={200}>
+          <div className="mt-3 grid items-center gap-4 rounded-md bg-chocolate p-5 text-areia md:mt-5 md:grid-cols-[1fr_1.1fr] md:gap-8 md:p-7">
+            <div className="flex flex-col gap-1">
+              <span className={`${rotulo} text-abobora`}>Doe pelo Pix</span>
+              <h3 className="font-display text-2xl font-bold md:text-3xl">Qualquer valor ajuda</h3>
+              <p className="text-sm font-semibold text-areia/85 md:text-base">Vira ração, remédio e cuidados para os bichinhos do abrigo.</p>
+            </div>
+            <CopiarPix chave={SITE.pix} />
+          </div>
+        </Revelar>
       </section>
 
       {/* Pets em destaque */}
