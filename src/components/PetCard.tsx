@@ -56,9 +56,6 @@ export function PetCard({ pet }: { pet: Pet }) {
         >
           <div className="relative aspect-square w-full overflow-hidden rounded-sm bg-fundo">
             <FotoPet pet={pet} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
-            <span className="absolute left-2 top-2 rounded-full bg-chocolate px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider text-areia @min-[260px]:left-3 @min-[260px]:top-3 @min-[260px]:px-3 @min-[260px]:py-1 @min-[260px]:text-xs">
-              {especie}
-            </span>
             <span className="absolute bottom-2 right-2 flex h-9 w-9 items-center justify-center rounded-full bg-abobora text-chocolate transition-transform duration-300 group-hover:rotate-180 @min-[260px]:bottom-3 @min-[260px]:right-3 @min-[260px]:h-10 @min-[260px]:w-10">
               <Virar />
             </span>
