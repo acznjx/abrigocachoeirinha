@@ -138,7 +138,7 @@ export default function Home() {
           </div>
           <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-5 lg:grid-cols-3">
             {pets.slice(0, 4).map((pet, i) => (
-              <Revelar key={pet.slug} de="zoom" atraso={(i % 3) * 120} className={i === 3 ? "lg:hidden" : undefined}>
+              <Revelar key={pet.slug} de="zoom" atraso={(i % 3) * 120} className={i === 3 ? "h-full lg:hidden" : "h-full"}>
                 <PetCard pet={pet} />
               </Revelar>
             ))}

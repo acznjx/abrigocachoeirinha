@@ -52,7 +52,7 @@ export function ListaPets({ pets }: { pets: Pet[] }) {
       </p>
       <div className="mt-4 grid grid-cols-2 gap-3 sm:gap-5 md:mt-8 lg:grid-cols-3">
         {visiveis.map((pet, i) => (
-          <div key={pet.slug} data-revelar style={atraso((i % 3) * 90)}>
+          <div key={pet.slug} data-revelar style={atraso((i % 3) * 90)} className="h-full">
             <PetCard pet={pet} />
           </div>
         ))}

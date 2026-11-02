@@ -39,9 +39,9 @@ export function PetCard({ pet }: { pet: Pet }) {
   ].filter((f): f is { rotulo: string; valor: string } => Boolean(f.valor));
 
   return (
-    <div className="@container [perspective:1200px]">
+    <div className="@container h-full [perspective:1200px]">
       <div
-        className={`relative grid transition-transform duration-700 ease-[cubic-bezier(.2,.8,.2,1)] [transform-style:preserve-3d] motion-reduce:transition-none ${
+        className={`relative grid h-full transition-transform duration-700 ease-[cubic-bezier(.2,.8,.2,1)] [transform-style:preserve-3d] motion-reduce:transition-none ${
           virado ? "[transform:rotateY(180deg)]" : ""
         }`}
       >
