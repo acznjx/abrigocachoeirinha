@@ -119,6 +119,9 @@ export default function Home() {
               <span className={`${rotulo} text-abobora`}>Doe pelo Pix</span>
               <h3 className="font-display text-2xl font-bold md:text-3xl">Qualquer valor ajuda</h3>
               <p className="text-sm font-semibold text-areia/85 md:text-base">Vira ração, remédio e cuidados para os bichinhos do abrigo.</p>
+              <Link href="/como-ajudar#padrinho" className="mt-1 self-start font-bold text-abobora underline underline-offset-4 hover:text-areia">
+                Quer ajudar todo mês? Seja padrinho
+              </Link>
             </div>
             <CopiarPix chave={SITE.pix} />
           </div>

@@ -57,6 +57,10 @@ export default function TermosPage() {
           <a href={`mailto:${SITE.email}`}>{SITE.email}</a> ou chame no WhatsApp em até 30 dias, com o comprovante, e
           devolvemos o valor pelo mesmo meio.
         </li>
+        <li>
+          <strong>Padrinhos e madrinhas:</strong> a doação mensal é agendada por você no seu banco. O abrigo não faz
+          cobranças: você muda o valor ou cancela quando quiser, direto no app do banco.
+        </li>
         <li>Fora desses casos, por serem voluntárias, as doações não são reembolsáveis.</li>
         <li>
           Não há venda de produtos nem cobrança de assinatura pelo site. Se alguém pedir dinheiro em nome do abrigo por outra

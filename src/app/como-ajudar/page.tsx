@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Apadrinhar } from "@/components/Apadrinhar";
 import { CopiarPix } from "@/components/CopiarPix";
 import { Patinha } from "@/components/Patinha";
 import { parceiros, whatsappParceiro } from "@/data/parceiros";
@@ -9,7 +10,7 @@ import { atraso, botao, rotulo } from "@/lib/ui";
 
 export const metadata: Metadata = {
   title: "Como ajudar",
-  description: "Doe pelo Pix, doe ração, seja lar temporário, voluntário ou participe das rifas do Abrigo Cachoeirinha.",
+  description: "Doe pelo Pix, seja padrinho com uma doação mensal, doe ração, seja lar temporário, voluntário ou participe das rifas do Abrigo Cachoeirinha.",
 };
 
 const card =
@@ -111,6 +112,10 @@ export default function ComoAjudarPage() {
             Entrar no grupo
           </a>
         </article>
+      </section>
+
+      <section id="padrinho" data-revelar className="mx-auto w-full max-w-6xl scroll-mt-24 px-5 pb-12 md:pb-20">
+        <Apadrinhar />
       </section>
     </>
   );
